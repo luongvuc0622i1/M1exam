@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai2</title>
+</head>
+<body>
+<script>
+    function insertNumberToArray(array,x,index) {
+        for (let i = 0; i <= array.length; i++) {
+            if (i == index) {
+                for (let j = (array.length - 1); j >= i; j--) {
+                    array[j + 1] = array[j];
+                }
+                array[i] = x;
+            }
+        }
+        return array;
+    }
+</script>
+</body>
+</html>
